@@ -1,25 +1,30 @@
 class Complex {
     private re:number;
     private im:number;
-    constructor(re:number,im:number)
-    add(complex2:Complex){
-        let re=this.re+complex2re;
-        let im=this.im+complex2im;
-        return new complex(re,im);
+    constructor(re:number,im:number){
+        this.re = re;
+        this.im = im;
     }
-    let a=new complex(5,2)
-    let b=new complex (7,3)
+    add(Complex2:Complex){
+        let re=this.re+Complex2re;
+        let im=this.im+Complex2im;
+        return new Complex2(re,im);
+    }
+
+    let a=new Complex(5,2);
+    let b=new Complex (7,3);
     let c=a.add(b);
 
-    substruct(complex2:Complex){
-        let re=this.re-complex2re;
-        let im=this.im-complex2im;
-        return new complex(re,im);
+    substruct(Complex3:Complex){
+        let re=this.re-Complex2re;
+        let im=this.im-Complex2im;
+        return new Complex(re,im);
     }
-    let a=new complex(5,2)
-    let b=new complex (7,3)
+
+    let a=new Complex(5,2);
+    let b=new Complex (7,3);
     let c=a.substruct(b);
 
-    toString(){}
+    toString(Complex4:Complex)
 
-}
+    }
